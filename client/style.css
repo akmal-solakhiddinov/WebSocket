@@ -1,0 +1,137 @@
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 60%;
+      height: 70%;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    header {
+      background: #3b82f6;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    #connection_status {
+      font-size: 0.85rem;
+      color: #d1fae5;
+    }
+
+    .forms {
+      padding: 12px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .forms p {
+      margin: 6px 0;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .forms form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+    }
+
+    input[type="submit"] {
+      background: #3b82f6;
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    input[type="submit"]:hover {
+      background: #2563eb;
+    }
+
+    #message-box {
+      flex: 1;
+      padding: 12px;
+      overflow-y: auto;
+      background: #f9fafb;
+    }
+
+    .message {
+      max-width: max-content;
+      padding: 10px;
+      margin: 6px 0;
+      border-radius: 10px;
+      word-wrap: break-word;
+      position: relative;
+    }
+
+    .message.user {
+      background: #3b82f6;
+      color: white;
+      margin-left: auto;
+      text-align: right;
+    }
+
+    .message.other {
+      background: #e5e7eb;
+      color: #111827;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    .sender {
+      font-weight: bold;
+      font-size: 0.8rem;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    .time {
+      font-size: 0.7rem;
+      opacity: 0.7;
+      margin-top: 4px;
+      display: block;
+    }
+
+    .chat-input {
+      display: flex;
+      padding: 10px;
+      border-top: 1px solid #e5e7eb;
+      background: white;
+    }
+
+    .chat-input input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+    }
+
+    .chat-input input[type="submit"] {
+      margin-left: 8px;
+      background: #3b82f6;
+      border-radius: 8px;
+    }
